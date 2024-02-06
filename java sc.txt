@@ -1,0 +1,19 @@
+let xBolinha = 300;
+let yBolinha = 200;
+let diametro = 20;
+let speed = 0.05;
+let x = 0;
+
+function setup() {
+  createCanvas(600, 400);
+}
+
+function draw() {
+  background(0, 33, 55);
+  let deltaX = speed * deltaTime;
+  x += deltaX;
+  if (x > 300) {
+    x = 0;
+  }
+   circle(x, 200, 20);
+}
